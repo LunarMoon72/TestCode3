@@ -24,7 +24,7 @@ class Main extends PluginBase implements Listener{
    public function onDisabled(){
    	$this->getLogger()->info("Plugin is Disabled");
    }
-   public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
+   public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args Player $player) : bool{
    	switch($cmd->getName()){
    		case "test":
    		 if($player->hasPermission("testcode4.cmd")){
