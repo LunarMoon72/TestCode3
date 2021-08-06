@@ -2,17 +2,17 @@
 
 namespace LunarMoon72;
 
-use pocketmine/plugin/PluginBase;
+use pocketmine\plugin\PluginBase;
 
-use pocketmine/Player;
+use pocketmine\Player;
 
-use pocketmine/Server;
+use pocketmine\Server;
 
-use pocketmine/event/Listener;
+use pocketmine\event\Listener;
 
-use pocketmine/command/Command;
+use pocketmine\command\Command;
 
-use pocketmine/command/CommandSender;
+use pocketmine\command\CommandSender;
 
 class Main extends PluginBase{
    public function onEnabled(){
@@ -24,7 +24,7 @@ class Main extends PluginBase{
    public function onDisabled(){
    	$this->getLogger()->info("Plugin is Disabled");
    }
-   public function onCommand(CommandSender $sender, Command $cmd, string $label array $args) : bool{
+   public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
    	switch($cmd->getName()){
    		case "test":
    		  $sender->sendMessage("This is a test cmd!");
