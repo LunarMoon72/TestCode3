@@ -1,0 +1,18 @@
+name: TestCode3
+version: 0.0.1
+author: LunarMoon72
+main: LunarMoon72/TestCode3/Main
+api: 3.21.1
+mcpe-protocol: 448
+description: A plugin with commands.
+
+commands:
+  test:
+    description: This is a Test CMD
+    aliases: test
+    permission: testcode3.command
+
+permissions:
+  testcode3.command:
+    description: This is a permission
+    default: op
