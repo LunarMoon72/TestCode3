@@ -1,7 +1,7 @@
 name: TestCode3
 version: 0.0.1
 author: LunarMoon72
-main: LunarMoon72/TestCode3/Main
+main: LunarMoon72\TestCode3\Main
 api: 3.21.1
 mcpe-protocol: 448
 description: A plugin with commands.
