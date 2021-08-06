@@ -14,7 +14,7 @@ use pocketmine\command\Command;
 
 use pocketmine\command\CommandSender;
 
-class Main extends PluginBase{
+class Main extends PluginBase(){
    public function onEnabled(){
    	$this->getServer()->getPluginManager()->registerEvents($this,$this);
    	$this->getLogger()->info("Plugin is Enabled");
