@@ -27,9 +27,20 @@ class Main extends PluginBase implements Listener{
    public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
    	switch($cmd->getName()){
    		case "test":
-   		  $sender->sendMessage("This is a test cmd!");
+   		 if($player->hasPermission("testcode4.cmd")){
+   		 	if(!sender instanceof Player){
+   		 		$sender->sendMessage("This command is for players!");
+   		 	}else{
+   		 		if(!isset($args[0]) or (is_int($args[0]) > 0)){
+   		 			$args[0] = 4;
+   		 		}
+   		 		$sender->getInventory()->addItem(Item::get(364,0,$args[0]));
+   		 		$sender->sendMessage("You have just recieved" .count($args[0]). " steak!");
+   		 	}  
+
+   		 }
    		break;
    	}
-    return true;
+      return true;
    }
 }
