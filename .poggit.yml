@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/LunarMoon72/TestCode3
+build-by-default: true
+branches:
+- main
+projects:
+  TestCode3:
+    path: ""
+...
